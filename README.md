@@ -30,11 +30,7 @@ The agents use a **Kaggle restaurant review dataset** for demonstration.
   - `Rating` — Customer rating  
 
 ---
-Perfect — your README is already very structured. To mention **how sentiment is calculated from the rating**, the best place is **right after the Dataset section or as part of the Approach/How it works section**.
 
-Here’s how I would integrate it:
-
----
 ## 🛠 Approach / Sentiment Assignment
 
 - Sentiment is **derived from the `Rating` column** in the dataset using pandas `cut()` method.

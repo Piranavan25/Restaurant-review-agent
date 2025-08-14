@@ -91,7 +91,7 @@ Enter your choice (1-4):
 
 | Option | Description |
 |--------|-------------|
-| **1** | **Respond to a customer review** - Takes a review, detects sentiment using AI, and generates a polite reply |
+| **1** | **Respond to a customer review** - Randomly Takes a review from the preprocessed_review.csv, detects sentiment using AI, and generates a polite reply |
 | **2** | **Generate sentiment visualization** - Creates daily sentiment plots for a date range (see example below) |
 | **3** | **Show sample reviews** - Displays dataset samples for reference |
 | **4** | **Exit program** - Terminates the application |

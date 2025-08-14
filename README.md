@@ -2,7 +2,7 @@
 # SteamNoodles Feedback Agents — Piranavan
 
 **University:** University of Moratuwa  
-**Year:** 2nd Year  
+**Year:** 3rd Year  
 
 ---
 
@@ -35,7 +35,7 @@ The agents use a **Kaggle restaurant review dataset** for demonstration.
 
 1. **Clone this repository**
    ```bash
-   git clone https://github.com/Piranavan25/Restaurant-review-agent.git
+   [git clone https://github.com/Piranavan25/Restaurant-review-agent.git](https://github.com/Piranavan25/Steamnoodles-feedback-agent-Piranavan.git)
    cd Restaurant-review-agent
    ```
 

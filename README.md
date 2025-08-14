@@ -35,8 +35,8 @@ The agents use a **Kaggle restaurant review dataset** for demonstration.
 
 1. **Clone this repository**
    ```bash
-   [git clone https://github.com/Piranavan25/Restaurant-review-agent.git](https://github.com/Piranavan25/Steamnoodles-feedback-agent-Piranavan.git)
-   cd Restaurant-review-agent
+   git clone https://github.com/Piranavan25/Steamnoodles-feedback-agent-Piranavan.git
+   cd Steamnoodles-feedback-agent-Piranavan
    ```
 
 2. **Create and activate virtual environment**

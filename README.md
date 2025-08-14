@@ -1,7 +1,8 @@
+
 # SteamNoodles Feedback Agents — Piranavan
 
-**University:** University of Moratuwa 
-**Year:** 2nd Year
+**University:** University of Moratuwa  
+**Year:** 2nd Year  
 
 ---
 
@@ -21,14 +22,12 @@ The agents use a **Kaggle restaurant review dataset** for demonstration.
 
 ## 📂 Dataset
 
-- Source: [Kaggle Restaurant Reviews Dataset]([https://www.kaggle.com](https://www.kaggle.com/datasets/farukalam/yelp-restaurant-reviews))  
+- Source: [Kaggle Restaurant Reviews Dataset](https://www.kaggle.com/datasets/farukalam/yelp-restaurant-reviews)  
 - After preprocessing, important columns are:
   - `Review_Text` — Customer feedback text  
   - `Sentiment` — Sentiment label (Positive, Neutral, Negative)  
-  - `Date` — Datetime of review submission
-  - `Rating` — Custommer Rating  
-
-
+  - `Date` — Datetime of review submission  
+  - `Rating` — Customer rating  
 
 ---
 
@@ -38,3 +37,94 @@ The agents use a **Kaggle restaurant review dataset** for demonstration.
    ```bash
    git clone https://github.com/Piranavan25/Restaurant-review-agent.git
    cd Restaurant-review-agent
+   ```
+
+2. **Create and activate virtual environment**
+   ```bash
+   python -m venv venv
+   source venv/bin/activate   # Linux/macOS
+   venv\Scripts\activate      # Windows
+   ```
+
+3. **Install dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. **Add your Groq API Key**
+   Create a `.env` file in the root folder:
+   ```bash
+   GROQ_API_KEY=your_groq_api_key_here
+   ```
+
+5. **Place dataset**
+   Download the dataset and place it in the `data/` folder.
+
+---
+
+## ▶️ How to Run
+
+Run the main program:
+```bash
+python main.py
+```
+
+You will see an interactive menu:
+```
+Beyond Flavours Feedback Agent System
+Preprocessing data...
+
+=== Initial Data ===
+Total rows: 19896
+Columns: ['Yelp URL', 'Rating', 'Date', 'Review Text']
+...
+
+Options:
+1. Respond to a customer review
+2. Generate sentiment visualization
+3. Show sample reviews
+4. Exit
+Enter your choice (1-4):
+```
+
+### Menu Options Explained
+
+| Option | Description |
+|--------|-------------|
+| **1** | **Respond to a customer review** - Takes a review, detects sentiment using AI, and generates a polite reply |
+| **2** | **Generate sentiment visualization** - Creates daily sentiment plots for a date range (see example below) |
+| **3** | **Show sample reviews** - Displays dataset samples for reference |
+| **4** | **Exit program** - Terminates the application |
+
+---
+
+## 🖼️ Demo Screenshots
+
+### Main Menu
+![Start Screen](demo_images/start.png)
+
+### Option 1: AI-Generated Response
+![Respond to Review](demo_images/Respond_to_a_review.png)
+
+### Option 2: Sentiment Analysis
+![Sentiment Plot](demo_images/Sentiment_plot.png)
+
+### Option Selection
+![Select Option](demo_images/Select_option_2.png)
+
+### Option Selection
+![Select Option](demo_images/Select_option_3.png)
+
+---
+
+## 📚 Dependencies
+
+- Python 3.8+
+- Groq API
+- Pandas
+- python-dotenv
+
+See `requirements.txt` for full list.
+
+---
+

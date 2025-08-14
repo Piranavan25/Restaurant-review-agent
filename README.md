@@ -30,6 +30,37 @@ The agents use a **Kaggle restaurant review dataset** for demonstration.
   - `Rating` — Customer rating  
 
 ---
+Perfect — your README is already very structured. To mention **how sentiment is calculated from the rating**, the best place is **right after the Dataset section or as part of the Approach/How it works section**.
+
+Here’s how I would integrate it:
+
+---
+## 🛠 Approach / Sentiment Assignment
+
+- Sentiment is **derived from the `Rating` column** in the dataset using pandas `cut()` method.
+- Ratings are binned into three categories:
+
+```python
+df['sentiment'] = pd.cut(
+    df['rating'],
+    bins=[0, 2, 4, 5.1],
+    labels=['negative', 'neutral', 'positive'],
+    right=False
+)
+````
+
+* **0 ≤ rating < 2** → `negative`
+
+* **2 ≤ rating < 4** → `neutral`
+
+* **4 ≤ rating ≤ 5** → `positive`
+
+* This sentiment label is then used by:
+
+  * **Agent 1**: To generate polite, context-aware replies.
+  * **Agent 2**: To create daily sentiment visualizations.
+
+---
 
 ## ⚙️ Setup Instructions
 
@@ -91,7 +122,7 @@ Enter your choice (1-4):
 
 | Option | Description |
 |--------|-------------|
-| **1** | **Respond to a customer review** - Randomly Takes a review from the preprocessed_review.csv, detects sentiment using AI, and generates a polite reply |
+| **1** | **Respond to a customer review** - Randomly Takes a review from the preprocessed_review.csv, detects sentiment(Based on rating ) , using AI generates a polite reply |
 | **2** | **Generate sentiment visualization** - Creates daily sentiment plots for a date range (see example below) |
 | **3** | **Show sample reviews** - Displays dataset samples for reference |
 | **4** | **Exit program** - Terminates the application |

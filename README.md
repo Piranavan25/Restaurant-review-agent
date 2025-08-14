@@ -2,7 +2,7 @@
 # SteamNoodles Feedback Agents — Piranavan
 
 **University:** University of Moratuwa  
-**Year:** 3rd Year  
+**Year:** 2nd Year  
 
 ---
 
